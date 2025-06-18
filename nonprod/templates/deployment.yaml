@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: 674059452637.dkr.ecr.us-east-1.amazonaws.com/fakedata:latest
+        image: 674059452637.dkr.ecr.us-east-1.amazonaws.com/fakedata:15732397413
         ports:
         - containerPort: 8080
