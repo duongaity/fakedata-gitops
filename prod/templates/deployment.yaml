@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fakedata
+  namespace: argocd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fakedata
+  template:
+    metadata:
+      labels:
+        app: fakedata
+    spec:
+      containers:
+        - name: fakedata
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+      # containers:
+      #   - name: fakedata
+      #     image: 674059452637.dkr.ecr.us-east-1.amazonaws.com/fakedata:15732397413
+      # imagePullSecrets:
+      #   - name: ecr-secret

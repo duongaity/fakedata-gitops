@@ -1,0 +1,6 @@
+apiVersion: v2
+name: fakedata
+description: A Helm chart for deploying the fakedata Spring Boot app
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
