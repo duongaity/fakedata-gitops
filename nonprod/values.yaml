@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: 674059452637.dkr.ecr.us-east-1.amazonaws.com/fakedata
   pullPolicy: IfNotPresent
-  tag: "15727211817"
+  tag: "15732057561"
 
 service:
   type: ClusterIP
