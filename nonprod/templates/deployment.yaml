@@ -1,21 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-app
+  name: fakedata
+  namespace: argocd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: spring-boot-app
+      app: fakedata
   template:
     metadata:
       labels:
-        app: spring-boot-app
+        app: fakedata
     spec:
       containers:
-        - name: app
+        - name: fakedata
           image: 674059452637.dkr.ecr.us-east-1.amazonaws.com/fakedata:15732397413
-          ports:
-            - containerPort: 8080
       imagePullSecrets:
         - name: ecr-secret
