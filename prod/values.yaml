@@ -3,12 +3,12 @@ replicaCount: 1
 # image:
 #   repository: 674059452637.dkr.ecr.us-east-1.amazonaws.com/fakedata
 #   pullPolicy: IfNotPresent
-#   tag: "15736648357"
+#   tag: "15782679135"
 
 image:
   repository: public.ecr.aws/c3y1g3o1/duongaity/fakedata
   pullPolicy: IfNotPresent
-  tag: "15736648357"
+  tag: "15782679135"
 
 service:
   type: ClusterIP
