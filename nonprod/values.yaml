@@ -1,12 +1,12 @@
 replicaCount: 1
 
 # image:
-#   repository: 674059452637.dkr.ecr.us-east-1.amazonaws.com/fakedata
+#   repository: 994466158406.dkr.ecr.us-east-1.amazonaws.com/fakedata
 #   pullPolicy: IfNotPresent
 #   tag: "15780643153"
 
 image:
-  repository: public.ecr.aws/c3y1g3o1/duongaity/fakedata
+  repository: public.ecr.aws/v9z8i8v0/awsdevops/fakedata
   pullPolicy: IfNotPresent
   tag: "15780643153"
 
